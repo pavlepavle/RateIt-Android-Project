@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeID"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rs.fon.rateit.aktivnosti.RateMoviesDetailsActivity">
+
+    <TextView
+        android:id="@+id/tvMovieTitle23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <ImageView
+        android:id="@+id/ivMovie23"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvMovieTitle23"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/ic" />
+
+    <TextView
+        android:id="@+id/tvMovieYear23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMovieTitle23"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="TextView" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMovieYear23"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+
+        />
+
+    <Button
+        android:id="@+id/btnRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:background="@android:color/holo_green_light"
+        android:text="Rate"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</RelativeLayout>

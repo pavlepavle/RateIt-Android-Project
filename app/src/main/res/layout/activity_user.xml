@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rs.fon.rateit.aktivnosti.UserActivity">
+
+    <RelativeLayout
+        android:layout_width="344dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/tvWelcomeMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnLogout"
+            android:fontFamily="cursive"
+            android:text="Username"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_alignLeft="@+id/btnRateMovies"
+            android:layout_alignStart="@+id/btnRateMovies" />
+
+        <Button
+            android:background="@android:color/holo_green_dark"
+            android:id="@+id/btnLogout"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:width="10dp"
+            android:text="Logout"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/btnTop10"
+            android:layout_alignEnd="@+id/btnTop10"
+            android:textColor="@android:color/black"
+
+            />
+
+
+        <Button
+            android:id="@+id/btnRateMovies"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvWelcomeMsg"
+            android:layout_marginLeft="54dp"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="79dp"
+            android:background="@android:color/holo_blue_light"
+            android:text="Rate movies" />
+
+        <Button
+            android:id="@+id/btnEditProfile"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_alignLeft="@+id/btnRateMovies"
+            android:layout_alignStart="@+id/btnRateMovies"
+            android:layout_below="@+id/btnRateMovies"
+            android:background="@android:color/holo_purple"
+            android:text="Edit Profile" />
+
+        <Button
+            android:id="@+id/btnTop10"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_above="@+id/btnYourRatings"
+            android:layout_toEndOf="@+id/btnRateMovies"
+            android:layout_toRightOf="@+id/btnRateMovies"
+            android:background="@android:color/holo_orange_dark"
+            android:text="Top 10" />
+
+        <Button
+            android:id="@+id/btnYourRatings"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_below="@+id/btnRateMovies"
+            android:layout_toEndOf="@+id/btnRateMovies"
+            android:layout_toRightOf="@+id/btnRateMovies"
+            android:background="@android:color/holo_green_light"
+            android:text="Your Ratings" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
